@@ -7,7 +7,7 @@
 #endif
 
 // 天頂角の範囲設定（レイキャストの負荷軽減のため）
-constexpr double THETA_MIN_DEG = 20.0;
+constexpr double THETA_MIN_DEG = 0;
 constexpr double THETA_MAX_DEG = 89.0;
 
 std::vector<std::tuple<Vec3, Vec3>> SkyRatioChecker::generate_rays_from_checkpoint(const Vec3& checkpoint) {
