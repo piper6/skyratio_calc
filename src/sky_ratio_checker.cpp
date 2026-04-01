@@ -16,7 +16,6 @@ constexpr double THETA_MAX_DEG = 89.0;
 
 std::vector<std::tuple<Vec3, Vec3>> SkyRatioChecker::generate_rays_from_checkpoint(const Vec3& checkpoint) {
   if(!use_spiral) {
-    printf("[INFO] Generating rays with uniform grid sampling. Resolution: %.2f degrees\n", ray_resolution);
   if(ray_resolution <= 0.0f || ray_resolution > 180.0f) ray_resolution = 1.0f;
   // 天頂角(theta): 20度から89度までに変更（負荷軽減のため）
   int theta_steps = static_cast<int>((THETA_MAX_DEG - THETA_MIN_DEG) / ray_resolution);
@@ -44,7 +43,6 @@ std::vector<std::tuple<Vec3, Vec3>> SkyRatioChecker::generate_rays_from_checkpoi
   return rays;
   }
    else {
-    printf("[INFO] Generating rays with spiral sampling. Number of rays: %d\n", (int)num_rays);
 
   const double golden_angle_rad = M_PI * (3.0 - std::sqrt(5.0));
 
