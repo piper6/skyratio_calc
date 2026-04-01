@@ -25,10 +25,6 @@ add_executable(sample_cpp
     src/sky_ratio_checker.cpp
 )
 
-add_executable(repro_false_negative
-    src/repro_false_negative.cpp
-    src/scene_raycaster.cpp
-)
 
 # Pythonモジュールの作成
 nanobind_add_module(skyratio_calc 
@@ -40,7 +36,6 @@ nanobind_add_module(skyratio_calc
 # インストール設定
 install(TARGETS skyratio_calc LIBRARY DESTINATION .)
 install(TARGETS sample_cpp RUNTIME DESTINATION .)
-install(TARGETS repro_false_negative RUNTIME DESTINATION .)
 
 # スタブファイルのインストール
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/skyratio_calc.pyi DESTINATION .)

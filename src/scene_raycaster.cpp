@@ -187,6 +187,7 @@ std::vector<HitResult> SceneRaycaster::raycast(const std::vector<Vec3>& origins,
     size_t end   = std::min(start + batch_size, rays.size());
     size_t count = end - start;
 
+    // Intersect256Raysに投げるとtrueのものもfalseと判定されることがあるので、フルバッチでも個別に処理するように変更
     // if(count == batch_size) {
     //   // フルバッチの場合は最適化版を使用
     //   bvh->Intersect256Rays(&rays[start]);
@@ -196,7 +197,6 @@ std::vector<HitResult> SceneRaycaster::raycast(const std::vector<Vec3>& origins,
     //     bvh->Intersect(rays[i]);
     //   }
     // }
-    //printf("Processing batch %zu/%zu (rays %zu to %zu)\n", batch + 1, num_batches, start, end);
     for(size_t i = start; i < end; i++) {
         bvh->Intersect(rays[i]);
     }
