@@ -25,6 +25,7 @@ add_executable(sample_cpp
     src/sky_ratio_checker.cpp
 )
 
+
 # Pythonモジュールの作成
 nanobind_add_module(skyratio_calc 
     src/hello.cpp

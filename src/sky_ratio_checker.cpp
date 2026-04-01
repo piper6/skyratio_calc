@@ -1,3 +1,5 @@
+
+
 #include "sky_ratio_checker.hpp"
 #include <cassert>
 #include <cmath>
@@ -7,10 +9,13 @@
 #endif
 
 // 天頂角の範囲設定（レイキャストの負荷軽減のため）
-constexpr double THETA_MIN_DEG = 0;
+constexpr double THETA_MIN_DEG = 0.0;
 constexpr double THETA_MAX_DEG = 89.0;
 
+
+
 std::vector<std::tuple<Vec3, Vec3>> SkyRatioChecker::generate_rays_from_checkpoint(const Vec3& checkpoint) {
+  if(!use_spiral) {
   if(ray_resolution <= 0.0f || ray_resolution > 180.0f) ray_resolution = 1.0f;
   // 天頂角(theta): 20度から89度までに変更（負荷軽減のため）
   int theta_steps = static_cast<int>((THETA_MAX_DEG - THETA_MIN_DEG) / ray_resolution);
@@ -36,9 +41,38 @@ std::vector<std::tuple<Vec3, Vec3>> SkyRatioChecker::generate_rays_from_checkpoi
   }
 
   return rays;
+  }
+   else {
+
+  const double golden_angle_rad = M_PI * (3.0 - std::sqrt(5.0));
+
+  std::vector<std::tuple<Vec3, Vec3>> rays;
+  rays.reserve(num_rays);
+
+  if(num_rays == 1) {
+    rays.push_back(std::make_tuple(checkpoint, Vec3{0.0, 0.0, 1.0}));
+    return rays;
+  }
+
+  for(int i = 0; i < num_rays; i++) {
+    const double z      = 1.0 - (static_cast<double>(i) / static_cast<double>(num_rays - 1));
+    const double radius = std::sqrt(std::max(0.0, 1.0 - z * z));
+    const double theta  = golden_angle_rad * static_cast<double>(i);
+
+    Vec3 direction{
+      std::cos(theta) * radius,
+      std::sin(theta) * radius,
+      z,
+    };
+    rays.push_back(std::make_tuple(checkpoint, direction));
+  }
+
+  return rays;
+}
 }
 
 std::vector<float> SkyRatioChecker::check(SceneRaycaster* raycaster) {
+  if(!use_spiral){
   if(raycaster == nullptr) {
     printf("[ERROR] SkyRatioChecker: SceneRaycaster is not set.\n");
     return {};
@@ -122,5 +156,59 @@ std::vector<float> SkyRatioChecker::check(SceneRaycaster* raycaster) {
     results.push_back(sky_ratio);
   }
 
-  return results;
+  return results; 
+  }
+  else {
+
+  if(raycaster == nullptr) {
+    printf("[ERROR] SkyRatioChecker: SceneRaycaster is not set.\n");
+    return {};
+  }
+
+  std::vector<float> results;
+  results.reserve(checkpoints.size());
+
+  raycaster->build();
+  if(raycaster->vertices.empty() || raycaster->indices.empty()) {
+    printf("[WARNING] SkyRatioChecker: SceneRaycaster has no geometry.\n");
+    return {1};
+  }
+
+  for(const auto& checkpoint : checkpoints) {
+    auto rays = generate_rays_from_checkpoint(checkpoint);
+
+    std::vector<Vec3> origins, directions;
+    origins.reserve(rays.size());
+    directions.reserve(rays.size());
+
+    for(const auto& ray : rays) {
+      origins.push_back(std::get<0>(ray));
+      directions.push_back(std::get<1>(ray));
+    }
+
+    const auto hit_results = raycaster->raycast(origins, directions);
+    if(hit_results.size() != directions.size()) {
+      results.push_back(-1.0f);
+      continue;
+    }
+
+    double total_weight      = 0.0;
+    double obstructed_weight = 0.0;
+    for(size_t i = 0; i < directions.size(); i++) {
+      const double weight = directions[i][2];
+      total_weight += weight;
+      if(hit_results[i].hit) obstructed_weight += weight;
+    }
+
+    if(total_weight <= 0.0) total_weight = 1.0;
+
+    float sky_ratio = static_cast<float>(1.0 - (obstructed_weight / total_weight));
+    if(sky_ratio < 0.0f) sky_ratio = 0.0f;
+    if(sky_ratio > 1.0f) sky_ratio = 1.0f;
+
+    results.push_back(sky_ratio);
+  }
+
+  return  results;
+}
 }
