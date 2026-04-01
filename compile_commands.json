@@ -1,0 +1,116 @@
+[
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -std=gnu++17 -arch arm64 -Wall -Wextra -o CMakeFiles/sample_cpp.dir/src/sample_cpp.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sample_cpp.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sample_cpp.cpp",
+  "output": "CMakeFiles/sample_cpp.dir/src/sample_cpp.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -std=gnu++17 -arch arm64 -Wall -Wextra -o CMakeFiles/sample_cpp.dir/src/scene_raycaster.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "output": "CMakeFiles/sample_cpp.dir/src/scene_raycaster.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -std=gnu++17 -arch arm64 -Wall -Wextra -o CMakeFiles/sample_cpp.dir/src/sky_ratio_checker.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sky_ratio_checker.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sky_ratio_checker.cpp",
+  "output": "CMakeFiles/sample_cpp.dir/src/sky_ratio_checker.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -std=gnu++17 -arch arm64 -Wall -Wextra -o CMakeFiles/repro_false_negative.dir/src/repro_false_negative.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/repro_false_negative.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/repro_false_negative.cpp",
+  "output": "CMakeFiles/repro_false_negative.dir/src/repro_false_negative.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -std=gnu++17 -arch arm64 -Wall -Wextra -o CMakeFiles/repro_false_negative.dir/src/scene_raycaster.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "output": "CMakeFiles/repro_false_negative.dir/src/scene_raycaster.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_internals.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_internals.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_internals.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_internals.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_func.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_func.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_func.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_func.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_type.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_type.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_type.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_type.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_enum.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_enum.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_enum.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_enum.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_ndarray.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_ndarray.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_ndarray.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_ndarray.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_static_property.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_static_property.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_static_property.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_static_property.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_ft.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_ft.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/nb_ft.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/nb_ft.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/common.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/common.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/common.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/common.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/error.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/error.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/error.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/error.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/trampoline.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/trampoline.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/trampoline.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/trampoline.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++  -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -isystem /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/ext/robin_map/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -fno-strict-aliasing -o CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/implicit.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/implicit.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/src/implicit.cpp",
+  "output": "CMakeFiles/nanobind-static.dir/src/ext/nanobind/src/implicit.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++ -Dskyratio_calc_EXPORTS -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -o CMakeFiles/skyratio_calc.dir/src/hello.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/hello.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/hello.cpp",
+  "output": "CMakeFiles/skyratio_calc.dir/src/hello.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++ -Dskyratio_calc_EXPORTS -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -o CMakeFiles/skyratio_calc.dir/src/scene_raycaster.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/scene_raycaster.cpp",
+  "output": "CMakeFiles/skyratio_calc.dir/src/scene_raycaster.cpp.o"
+},
+{
+  "directory": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc",
+  "command": "/usr/bin/clang++ -Dskyratio_calc_EXPORTS -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -I/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/ext/nanobind/include -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -Wall -Wextra -o CMakeFiles/skyratio_calc.dir/src/sky_ratio_checker.cpp.o -c /Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sky_ratio_checker.cpp",
+  "file": "/Users/tasuku-imoto/toyonaka2/lib/skyratio_calc/src/sky_ratio_checker.cpp",
+  "output": "CMakeFiles/skyratio_calc.dir/src/sky_ratio_checker.cpp.o"
+}
+]
